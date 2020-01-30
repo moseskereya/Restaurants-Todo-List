@@ -1,0 +1,15 @@
+﻿@model IEnumerable<OdeTofood.Data.Modals.Restaurant>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Restaurants</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+@foreach (var item in Model)
+{
+    @Html.Partial("_RestaurantSummary", item)
+}

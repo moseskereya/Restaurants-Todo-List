@@ -1,0 +1,12 @@
+﻿@model OdeTofood.Data.Modals.Restaurant
+
+<div class="panel panel-default">
+    <div class="page-header text-center text-uppercase">
+        <h3 class="panel-title">@Model.Name</h3>
+    </div>
+    <div class="panel-body  text-right">
+        @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+        @Html.ActionLink("Details", "Details", new { id = Model.ID }) |
+        @Html.ActionLink("Delete", "Delete", new { id = Model.ID })
+    </div>
+</div>
